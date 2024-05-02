@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="Home.js" defer></script>
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <!-- <script src="./script.js"></script> -->
+</head>
+
+<body>
+    <div class="system">
+        <div class="contain_all">
+            <div class="container">
+                <div class="name"><span style="margin-top: 20%; margin-left: 10%;" class="text">ABP News</span></div>
+                <!-- <div class="right" style="margin-top: -25px;"><img src="./images/person.png" alt="" id="person-icon"><img src="./images/notify.png"
+                        alt=""></div> -->
+                <div class="righ">
+                    <button id="logout">Log Out</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="body_getting">
+            <div class="live">
+                <!-- <h1>ABP NEWS</h1> -->
+                <div class="buttons_contain" style="margin-top: -15%;">
+                    <button class="live-button">Live</button>
+                    <button>Neural News</button>
+                    <button>Favour News</button>
+                    <button>Against News</button>
+                </div>
+                <img style="height: 100px;" src="./images/UPDATE-NEWS..png" alt="">
+            </div>
+            <div class="right_side">
+                <img style="height: 500px; margin-top: -30%;" src="./images/live.png" alt="">
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- <script>
+        const personIcon = document.getElementById('person-icon');
+        const dialogBox = document.getElementById('dialog-box');
+
+        // Add click event listener to the person icon image
+        personIcon.addEventListener('click', (event) => {
+            // Toggle the display of the dialog box
+            dialogBox.classList.toggle('show');
+
+            // Calculate the position of the clicked image relative to the viewport
+            const rect = event.target.getBoundingClientRect();
+            const positionTop = rect.top + window.scrollY;
+            const positionLeft = rect.left + window.scrollX;
+
+            // Position the dialog box below the clicked image
+            dialogBox.style.top = `${positionTop + event.target.offsetHeight}px`;
+            dialogBox.style.left = `${positionLeft}px`;
+        });
+    </script> -->
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newzoly</title>
+    <!-- <script type="module" src="./login.js" defer></script> -->
+    <!-- <link rel="stylesheet" href="./login.css"> -->
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="Landing.css">
+</head>
+
+<body>
+    <div class="contain">
+        <div class="contain_all">
+            <div class="container">
+                <a href="/landing.html"><div class="logo"><img src="./images/national-emblem.png" alt=""><span class="text">Newzoly</span></div></a>
+                <div class="right">
+                    <button id="login">Login</button>
+                    <button id="register">Sign Up</button>
+                    <img src="./images/notify.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="body_part">
+            <img src="./images/webp.jpg" alt="">
+        </div>
+    </div>
+
+    </div>
+    <script>
+
+
+        const login = document.getElementById('login');
+        const register = document.getElementById('register');
+
+        login.addEventListener("click", function (event) {
+            window.location.href = '/login.html';
+        })
+        register.addEventListener("click", function (event) {
+            window.location.href = '/register.html';
+        })
+
+    </script>
+</body>
+
+</html>

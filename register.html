@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script type="module" src="./index.js" defer></script>
+    <link rel="stylesheet" href="./Navbar.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="contain">
+        <div class="contain_all">
+            <div class="container">
+                <a href="/landing.html"><div class="logo"><img src="./images/national-emblem.png" alt=""><span class="text">Newzoly</span></div></a>
+                <div class="right"><img src="./images/person.png" alt="" id="person-icon"><img src="./images/notify.png"
+                        alt=""></div>
+            </div>
+        </div>
+         <!-- Dialog box  -->
+        <div id="dialog-box" class="dialog-box">
+            <a id="login-link" href="/login.html">Login</a>
+            <a id="signup-link" href="/register.html">Sign up</a>
+        </div> 
+
+
+        <div class="box">
+            <h2>Create New Account</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="number">Contact Number</label>
+                    <input type="tel" id="number" name="contact-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" id="submit_register" >Sign up</button>
+            </form>
+        </div>
+    </div>
+    <script>
+            const personIcon = document.getElementById('person-icon');
+        const dialogBox = document.getElementById('dialog-box');
+
+        // Add click event listener to the person icon image
+        personIcon.addEventListener('click', (event) => {
+            // Toggle the display of the dialog box
+            dialogBox.classList.toggle('show');
+
+            // Calculate the position of the clicked image relative to the viewport
+            const rect = event.target.getBoundingClientRect();
+            const positionTop = rect.top + window.scrollY;
+            const positionLeft = rect.left + window.scrollX;
+
+            // Position the dialog box below the clicked image
+            dialogBox.style.top = `${positionTop + event.target.offsetHeight}px`;
+            dialogBox.style.left = `${positionLeft}px`;
+        });
+    </script>
+</body>
+</html>
